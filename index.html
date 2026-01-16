@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João Pedro Azevedo Freire Mecenas</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="dark-mode transition-colors duration-300">
+    <!-- Botão para alternar tema -->
+    <div class="theme-toggle vermilion-bg" id="themeToggle">
+        <i class="fas fa-moon text-white text-xl" id="themeIcon"></i>
+    </div>
+
+    <!-- Cabeçalho/Navegação -->
+    <header id="baixar" class="flex top-0 z-50 backdrop-blur-sm justify-between transition-colors duration-300 ">
+
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-2xl font-bold">João Pedro Azevedo Freire</h1>
+                    <p class="text-gray-400">Desenvolvedor Full Stack</p>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex mg space-x-8">
+                        <li><a href="#sobre" class="hover:text-vermilion transition-colors">Sobre</a></li>
+                        <li><a href="#objetivo" class="hover:text-vermilion transition-colors">Objetivo</a></li>
+                        <li><a href="#habilidades" class="hover:text-vermilion transition-colors">Habilidades</a></li>
+                        <li><a href="#idiomas" class="hover:text-vermilion transition-colors">Idiomas</a></li>
+                        <li><a href="#projetos" class="hover:text-vermilion transition-colors">Projetos</a></li>
+                        <li><a href="#formacao" class="hover:text-vermilion transition-colors">Formação</a></li>
+                        <li><a href="#experiencia" class="hover:text-vermilion transition-colors">Experiência</a></li>
+                        <li><a href="#certificacoes" class="hover:text-vermilion transition-colors">Certificações</a>
+                        </li>
+                        <li><a href="#contato" class="hover:text-vermilion transition-colors">Contato</a></li>
+                    </ul>
+                </nav>
+                <button id="mobileMenuButton" class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobileMenu" class="md:hidden hidden transition-colors duration-300">
+
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="#sobre" class="block py-2 hover:text-vermilion transition-colors">Sobre</a></li>
+                    <li><a href="#objetivo" class="block py-2 hover:text-vermilion transition-colors">Objetivo</a></li>
+                    <li><a href="#habilidades" class="block py-2 hover:text-vermilion transition-colors">Habilidades</a>
+                    </li>
+                    <li><a href="#idiomas" class="block py-2 hover:text-vermilion transition-colors">Idiomas</a></li>
+                    <li><a href="#projetos" class="block py-2 hover:text-vermilion transition-colors">Projetos</a></li>
+                    <li><a href="#formacao" class="block py-2 hover:text-vermilion transition-colors">Formação</a></li>
+                    <li><a href="#experiencia" class="block py-2 hover:text-vermilion transition-colors">Experiência</a>
+                    </li>
+                    <li><a href="#certificacoes"
+                            class="block py-2 hover:text-vermilion transition-colors">Certificações</a></li>
+                    <li><a href="#contato" class="block py-2 hover:text-vermilion transition-colors">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-36">
+        <!-- Seção Sobre -->
+        <section id="sobre" class="mb-16">
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <h2 class="section-title text-3xl font-bold">Sobre</h2>
+                    <p class="text-xl mb-6">Desenvolvedor Full Stack com ênfase em Back-end</p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Profissional em formação técnica em Desenvolvimento de Sistemas pelo SENAI-SE,
+                        com experiência prática em desenvolvimento web full stack, suporte técnico e
+                        gestão de cloud. Possuo habilidades tanto em front-end quanto em back-end,
+                        com foco especial na criação de APIs robustas e sistemas escaláveis.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="px-6 py-3 rounded-full border border-gray-700">
+                            <i class="fas fa-map-marker-alt vermilion-text mr-3"></i>
+                            <span>Aracaju, SE</span>
+                        </div>
+                        <div class="px-6 py-3 rounded-full border border-gray-700">
+                            <i class="fas fa-flag vermilion-text mr-3"></i>
+                            <span>Brasileiro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 rounded-full border-4 vermilion-border overflow-hidden shadow-2xl">
+                        <!-- Avatar placeholder - pode ser substituído por uma foto real -->
+                        <div class="w-full h-full bg-gray-800 flex items-center justify-center">
+                            <img src="/img/Eu.png" alt=""
+                                class="w-full h-full bg-gray-800 flex items-center justify-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Objetivo Profissional -->
+        <section id="objetivo" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Objetivo Profissional</h2>
+            <div class="card-hover rounded-xl p-8 shadow-lg">
+                <div class="flex items-start">
+                    <div class="vermilion-bg text-white p-2 rounded-full mr-6">
+                        <i class="fas fa-bullseye text-2xl"></i>
+                    </div>
+                    <div class="pt-1">
+                        <p class="text-xl italic leading-relaxed">
+                            "Atuar em Desenvolvimento de Software e Cybersecurity, aplicando minhas habilidades Full
+                            Stack
+                            com ênfase em Back-end, com sólida experiência em integração ao Front-end."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades e Competências -->
+        <section id="habilidades" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Habilidades e Competências</h2>
+
+            <div class="grid md:grid-cols-1 gap-12">
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-users vermilion-text mr-4"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="card-hover rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <span class="text-lg">Trabalho em equipe</span>
+                            </div>
+                        </div>
+                        <div class="card-hover rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <span class="text-lg">Comunicação clara</span>
+                            </div>
+                        </div>
+                        <div class="card-hover rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <span class="text-lg">Autonomia</span>
+                            </div>
+                        </div>
+                        <div class="card-hover rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <span class="text-lg">Resolução de problemas</span>
+                            </div>
+                        </div>
+                        <div class="card-hover rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <span class="text-lg">Projetos estruturados e escaláveis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hard Skills com Níveis -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-code vermilion-text mr-4"></i>
+                        Hard Skills
+                    </h3>
+                    <div class="space-y-8 ">
+                        <!-- Categoria: Linguagens de Programação -->
+                        <div class="skill-category-slider">
+                            <div class="flex justify-between items-center mb-6">
+                                <h4 class="text-xl font-bold">Linguagens de Programação</h4>
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-gray-400 skill-counter">1/1</span>
+                                    <div class="flex space-x-2">
+                                        <button
+                                            class="skill-slider-nav prev w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors opacity-50 cursor-not-allowed">
+                                            <i class="fas fa-chevron-left text-sm"></i>
+                                        </button>
+                                        <button
+                                            class="skill-slider-nav next w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors opacity-50 cursor-not-allowed">
+                                            <i class="fas fa-chevron-right text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-slider-track " data-category="linguagens">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 ">
+                                    <!-- Exemplo de Hard Skill com nível -->
+                                    <div class="skill-card ">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center ">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-js-square text-yellow-400"></i>
+                                            </div>
+                                            <span class="font-medium text-center">JavaScript</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Tooltip -->
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-js-square text-yellow-400"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">JavaScript</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Experiência sólida em ES6+,
+                                                    manipulação de DOM, APIs assíncronas e padrões de design.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-java text-red-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Java</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 70%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">70%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-java text-red-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Java</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">Conhecimento em POO, Spring Boot e
+                                                    desenvolvimento de APIs RESTful.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-python text-blue-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Python</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 70%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">70%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-python text-blue-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Python</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">Experiência em scripts, automação e
+                                                    frameworks como Django e Flask.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-indicators flex justify-center mt-4 space-x-2">
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700 active"
+                                    data-index="0"></button>
+                            </div>
+                        </div>
+
+                        <!-- Categoria: Front-end -->
+                        <div class="skill-category-slider">
+                            <div class="flex justify-between items-center mb-6">
+                                <h4 class="text-xl font-bold">Front-end</h4>
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-gray-400 skill-counter">1/2</span>
+                                    <div class="flex space-x-2">
+                                        <button
+                                            class="skill-slider-nav prev w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-left text-sm"></i>
+                                        </button>
+                                        <button
+                                            class="skill-slider-nav next w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-right text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-slider-track" data-category="frontend">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-react text-blue-400"></i>
+                                            </div>
+                                            <span class="font-medium text-center">React</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-react text-blue-400"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">React</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Hooks, Context API, Redux,
+                                                    componentes funcionais e otimização de performance.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-bolt text-yellow-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Vite</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-bolt text-yellow-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Vite</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Configuração, plugins, bundling e
+                                                    otimização de projetos modernos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-mobile-alt text-blue-300"></i>
+                                            </div>
+                                            <span class="font-medium text-center">React Native</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 70%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">70%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-mobile-alt text-blue-300"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">React Native</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">Desenvolvimento de aplicativos
+                                                    móveis multiplataforma com componentes nativos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-css3-alt text-blue-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Tailwind CSS</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 85%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-css3-alt text-blue-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Tailwind CSS</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Utility-first CSS, componentes
+                                                    customizados e design responsivo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-indicators flex justify-center mt-4 space-x-2">
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700 active"
+                                    data-index="0"></button>
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700"
+                                    data-index="1"></button>
+                            </div>
+                        </div>
+
+                        <!-- Categoria: Back-end -->
+                        <div class="skill-category-slider">
+                            <div class="flex justify-between items-center mb-6">
+                                <h4 class="text-xl font-bold">Back-end</h4>
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-gray-400 skill-counter">1/2</span>
+                                    <div class="flex space-x-2">
+                                        <button
+                                            class="skill-slider-nav prev w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-left text-sm"></i>
+                                        </button>
+                                        <button
+                                            class="skill-slider-nav next w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-right text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-slider-track" data-category="backend">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-node-js text-green-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Express</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-node-js text-green-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Express.js</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">APIs RESTful, middleware,
+                                                    autenticação e arquitetura escalável.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-network-wired text-purple-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">API REST</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-network-wired text-purple-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">API REST</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Design, endpoints, autenticação e
+                                                    versionamento de APIs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-plug text-teal-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">WebSockets</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 75%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">75%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-plug text-teal-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">WebSockets</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">Socket.io, comunicação em tempo real
+                                                    e eventos bidirecionais.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-database text-indigo-400"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Prisma</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 85%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-database text-indigo-400"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Prisma</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">ORM moderno, migrations e
+                                                    type-safety para bancos de dados.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-book text-blue-600"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Swagger</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 80%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-book text-blue-600"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Swagger</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Documentação de APIs, OpenAPI e
+                                                    ferramentas de testes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-indicators flex justify-center mt-4 space-x-2">
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700 active"
+                                    data-index="0"></button>
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700"
+                                    data-index="1"></button>
+                            </div>
+                        </div>
+
+                        <!-- Categoria: Bancos de Dados -->
+                        <div class="skill-category-slider">
+                            <div class="flex justify-between items-center mb-6">
+                                <h4 class="text-xl font-bold">Bancos de Dados</h4>
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-gray-400 skill-counter">1/2</span>
+                                    <div class="flex space-x-2">
+                                        <button
+                                            class="skill-slider-nav prev w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-left text-sm"></i>
+                                        </button>
+                                        <button
+                                            class="skill-slider-nav next w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-right text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-slider-track" data-category="banco-dados">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-database text-blue-400"></i>
+                                            </div>
+                                            <span class="font-medium text-center">PostgreSQL</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-database text-blue-400"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">PostgreSQL</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Queries complexas, índices,
+                                                    procedures e otimização.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-database text-orange-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">SQL Server</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 75%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">75%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-database text-orange-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">SQL Server</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">T-SQL, administração básica e backup
+                                                    de dados.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-database text-yellow-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">MySQL</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 85%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-database text-yellow-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">MySQL</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Queries otimizadas, normalização e
+                                                    replicação.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-bolt text-red-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Redis</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 75%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">75%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-bolt text-red-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Redis</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">Cache, sessões e pub/sub para
+                                                    aplicações em tempo real.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-indicators flex justify-center mt-4 space-x-2">
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700 active"
+                                    data-index="0"></button>
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700"
+                                    data-index="1"></button>
+                            </div>
+                        </div>
+
+                        <!-- Categoria: Cloud e DevOps -->
+                        <div class="skill-category-slider">
+                            <div class="flex justify-between items-center mb-6">
+                                <h4 class="text-xl font-bold">Cloud e DevOps</h4>
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-gray-400 skill-counter">1/2</span>
+                                    <div class="flex space-x-2">
+                                        <button
+                                            class="skill-slider-nav prev w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-left text-sm"></i>
+                                        </button>
+                                        <button
+                                            class="skill-slider-nav next w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors">
+                                            <i class="fas fa-chevron-right text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-slider-track" data-category="cloud-devops">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-docker text-blue-600"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Docker</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 85%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-docker text-blue-600"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Docker</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Containers, docker-compose,
+                                                    multi-stage builds e otimização.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-microsoft text-blue-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Azure</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 80%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-microsoft text-blue-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Azure</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">App Services, Virtual Machines, SQL
+                                                    Database e Storage.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fab fa-git-alt text-orange-600"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Git/GitHub</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 95%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">95%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fab fa-git-alt text-orange-600"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Git/GitHub</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Versionamento, branching, pull
+                                                    requests e colaboração em equipe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-cloud text-blue-400"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Cloudinary</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 75%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Intermediário</span>
+                                                    <span class="text-xs">75%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-cloud text-blue-400"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Cloudinary</h5>
+                                                <p class="text-vermilion font-medium">Intermediário</p>
+                                                <p class="text-sm mt-2 text-center">Hospedagem de imagens,
+                                                    transformações e otimização de mídia.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-envelope text-orange-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Postman</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-envelope text-orange-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Postman</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Testes de APIs, automação, scripts e
+                                                    documentação.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-indicators flex justify-center mt-4 space-x-2">
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700 active"
+                                    data-index="0"></button>
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700"
+                                    data-index="1"></button>
+                            </div>
+                        </div>
+
+                        <!-- Categoria: Conceitos e Especialidades -->
+                        <div class="skill-category-slider">
+                            <div class="flex justify-between items-center mb-6">
+                                <h4 class="text-xl font-bold">Conceitos e Especialidades</h4>
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-gray-400 skill-counter">1/3</span>
+                                    <div class="flex space-x-2">
+                                        <button
+                                            class="skill-slider-nav prev w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors opacity-50 cursor-not-allowed">
+                                            <i class="fas fa-chevron-left text-sm"></i>
+                                        </button>
+                                        <button
+                                            class="skill-slider-nav next w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors opacity-50 cursor-not-allowed">
+                                            <i class="fas fa-chevron-right text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-slider-track" data-category="conceitos">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-cube text-purple-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">POO</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-cube text-purple-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">POO</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Encapsulamento, herança,
+                                                    polimorfismo e SOLID principles.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-cloud text-indigo-400"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Cloud</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 85%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-cloud text-indigo-400"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Cloud</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">Arquitetura cloud, microserviços e
+                                                    escalabilidade.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="card-hover rounded-lg p-4 flex flex-col items-center">
+                                            <div class="text-3xl mb-3">
+                                                <i class="fas fa-lock text-green-500"></i>
+                                            </div>
+                                            <span class="font-medium text-center">Autenticação Robusta</span>
+                                            <div class="w-full mt-3">
+                                                <div class="skill-level bg-gray-700">
+                                                    <div class="skill-level-fill" style="width: 88%"></div>
+                                                </div>
+                                                <div class="flex justify-between mt-1">
+                                                    <span class="text-xs">Avançado</span>
+                                                    <span class="text-xs">88%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-tooltip">
+                                            <div class="flex flex-col items-center">
+                                                <div class="text-4xl mb-2">
+                                                    <i class="fas fa-lock text-green-500"></i>
+                                                </div>
+                                                <h5 class="font-bold text-lg mb-1">Autenticação Robusta</h5>
+                                                <p class="text-vermilion font-medium">Avançado</p>
+                                                <p class="text-sm mt-2 text-center">JWT, OAuth2, 2FA e segurança em
+                                                    aplicações.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-indicators flex justify-center mt-4 space-x-2">
+                                <button class="skill-indicator w-2 h-2 rounded-full bg-gray-700 active"
+                                    data-index="0"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Idiomas -->
+        <section id="idiomas" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Idiomas</h2>
+            <p class="text-gray-400 mb-8 max-w-3xl">Domínio de idiomas com níveis CEFR (Common European Framework of
+                Reference for Languages)</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card de Idioma - Inglês -->
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start mb-6">
+                        <div class="vermilion-bg text-white p-4 rounded-full mr-4">
+                            <i class="fas fa-globe-americas text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Inglês</h3>
+                            <p class="text-gray-400">CEFR B2</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Nível: Intermediário</span>
+                            <span class="font-bold vermilion-text">B2</span>
+                        </div>
+                        <div class="skill-level bg-gray-700">
+                            <div class="skill-level-fill" style="width: 70%"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-sm text-gray-400">Básico</span>
+                            <span class="text-sm text-gray-400">Intermediário</span>
+                            <span class="text-sm text-gray-400">Avançado</span>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400">
+                        Compreensão e comunicação eficaz em contextos profissionais e sociais.
+                        Capacidade de participar de reuniões técnicas e escrever documentação em inglês.
+                    </p>
+                </div>
+
+                <!-- Card de Idioma - Português -->
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start mb-6">
+                        <div class="vermilion-bg text-white p-4 rounded-full mr-4">
+                            <i class="fas fa-globe-americas text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Português</h3>
+                            <p class="text-gray-400">Nativo</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Nível: Nativo</span>
+                            <span class="font-bold vermilion-text">C2</span>
+                        </div>
+                        <div class="skill-level bg-gray-700">
+                            <div class="skill-level-fill" style="width: 100%"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-sm text-gray-400">Básico</span>
+                            <span class="text-sm text-gray-400">Intermediário</span>
+                            <span class="text-sm text-gray-400">Avançado</span>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400">
+                        Língua materna com domínio completo da gramática, escrita técnica e comunicação
+                        profissional em diversos contextos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos com Slider -->
+        <section id="projetos" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Projetos em Destaque</h2>
+            <p class="text-gray-400 mb-10 max-w-3xl">Explore meus principais projetos desenvolvidos com tecnologias
+                modernas e boas práticas de desenvolvimento.</p>
+
+            <div class="projects-slider">
+                <!-- Botões de navegação -->
+                <div class="slider-nav prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-nav next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <!-- Track do slider -->
+                <div class="projects-track" id="projectsTrack">
+                    <!-- Projeto 1 - Emprego Vagas: posso ter esquecido informação confira -->
+                    <div class="project-card">
+                        <div class="project-card-inner card-hover">
+                            <div
+                                class="h-48 bg-gradient-to-r from-green-800 to-blue-800 flex items-center justify-center">
+                                <img src="/img/Emprego.png" alt=""
+                                    class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Emprego Vagas</h3>
+                                <p class="text-gray-400 mb-4">
+                                    Plataforma de empregos com sistema de busca inteligente, candidaturas e dashboard
+                                    para recrutadores.
+                                </p>
+
+                                <div class="mb-6">
+                                    <h4 class="font-medium mb-2">Tecnologias:</h4>
+                                    <div class="flex flex-wrap">
+                                        <span class="tech-badge">
+                                            <i class="fab fa-react text-blue-400 mr-1"></i> React
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fab fa-node-js text-green-500 mr-1"></i> Express.js
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-database text-blue-300 mr-1"></i> MongoDB
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-search text-yellow-500 mr-1"></i> ElasticSearch
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <a href="https://www.emprego-vagas.com.br" target="_blank"
+                                    class="block w-full py-3 border border-vermilion text-vermilion text-center rounded-lg hover:bg-vermilion hover:text-white transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Visitar Projeto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 - HAPS Engenharia -->
+                    <div class="project-card">
+                        <div class="project-card-inner card-hover">
+                            <div
+                                class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center">
+                                <img src="/img/HAPS.png" alt=""
+                                    class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">HAPS Engenharia</h3>
+                                <p class="text-gray-400 mb-4">
+                                    Site institucional para empresa de engenharia com catálogo de serviços, portfólio e
+                                    contato.
+                                </p>
+
+                                <div class="mb-6">
+                                    <h4 class="font-medium mb-2">Tecnologias:</h4>
+                                    <div class="flex flex-wrap">
+                                        <span class="tech-badge">
+                                            <i class="fab fa-html5 text-orange-500 mr-1"></i> HTML5
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fab fa-css3-alt text-blue-500 mr-1"></i> CSS3
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fab fa-js-square text-yellow-400 mr-1"></i> JavaScript
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-server text-green-400 mr-1"></i> PHP
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <a href="https://www.hapsengenharia.com.br" target="_blank"
+                                    class="block w-full py-3 border border-vermilion text-vermilion text-center rounded-lg hover:bg-vermilion hover:text-white transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Visitar Projeto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 - Consulte Já -->
+                    <div class="project-card">
+                        <div class="project-card-inner card-hover">
+                            <div
+                                class="h-48 bg-gradient-to-r from-blue-900 to-purple-900 flex items-center justify-center">
+                                <img src="/img/ConsulteJa.png" alt=""
+                                    class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Consulte Já</h3>
+                                <p class="text-gray-400 mb-4">
+                                    Plataforma de consultas médicas online com agendamento, telemedicina e histórico de
+                                    pacientes.
+                                </p>
+
+                                <div class="mb-6">
+                                    <h4 class="font-medium mb-2">Tecnologias:</h4>
+                                    <div class="flex flex-wrap">
+                                        <span class="tech-badge">
+                                            <i class="fab fa-react text-blue-400 mr-1"></i> React
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fab fa-node-js text-green-500 mr-1"></i> Node.js
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-database text-blue-300 mr-1"></i> PostgreSQL
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-cloud text-blue-200 mr-1"></i> AWS
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <a href="https://consulte-ja.vercel.app/" target="_blank"
+                                    class="block w-full py-3 vermilion-bg text-white text-center rounded-lg hover:bg-vermilion-light transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Visitar Projeto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicadores do slider -->
+                <div class="flex justify-center items-center mt-8 space-x-3" id="sliderIndicators">
+                    <!-- Os indicadores serão gerados do js, olhe lá -->
+                </div>
+
+                <!-- Contador de projetos -->
+                <div class="flex justify-center mt-4 text-gray-400">
+                    <span id="projectCounter">1</span> / <span id="projectTotal">3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formação Acadêmica -->
+        <section id="formacao" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Formação Acadêmica</h2>
+            <div class="card-hover rounded-xl p-8">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold">Técnico em Desenvolvimento de Sistemas</h3>
+                        <p class="text-gray-400 text-lg">Tecnologia da Informação</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span class="px-4 py-2 rounded-full vermilion-bg text-white font-medium">01/2023 -
+                            12/2025</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div>
+                        <p class="font-medium text-lg">SENAI-SE CETAF-AJU</p>
+                        <p class="text-gray-400">Aracaju, SE</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span
+                            class="px-4 py-2 rounded-full bg-green-900 text-green-300 border border-green-700 font-medium">Concluído</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Histórico Profissional -->
+        <section id="experiencia" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Histórico Profissional</h2>
+            <div class="card-hover rounded-xl p-8">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold">Estagiário de TI</h3>
+                        <p class="text-xl font-medium">HAPS Engenharia</p>
+                        <p class="text-gray-400">Aracaju, Sergipe</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span class="px-4 py-2 rounded-full vermilion-bg text-white font-medium">12/2025 - Atual</span>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-gray-400 leading-relaxed">
+                        Atuo no suporte técnico interno aos colaboradores, na gestão e configuração da cloud
+                        e no desenvolvimento de projetos web. Responsável por implementar soluções tecnológicas
+                        que otimizam processos internos e melhoram a experiência dos usuários.
+                    </p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check vermilion-text mt-1 mr-3"></i>
+                            <span>Desenvolvimento de aplicações web personalizadas para gestão interna</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check vermilion-text mt-1 mr-3"></i>
+                            <span>Configuração e manutenção de infraestrutura cloud (Azure)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check vermilion-text mt-1 mr-3"></i>
+                            <span>Suporte técnico especializado para equipe de engenharia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Certificações -->
+        <section id="certificacoes" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Certificações</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Python Essentials</h3>
+                            <p class="text-gray-400">SENAI</p>
+                            <p class="text-sm mt-2 vermilion-text font-medium">2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Versionamento de Código com Git e GitHub</h3>
+                            <p class="text-gray-400">DIO</p>
+                            <p class="text-sm mt-2 vermilion-text font-medium">2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Introdução ao Java com a Riachuelo</h3>
+                            <p class="text-gray-400">DIO</p>
+                            <p class="text-sm mt-2 vermilion-text font-medium">2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Fundamentos da Linguagem de Programação Java</h3>
+                            <p class="text-gray-400">DIO</p>
+                            <p class="text-sm mt-2 vermilion-text font-medium">2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Estruturas de Controle em Java</h3>
+                            <p class="text-gray-400">DIO</p>
+                            <p class="text-sm mt-2 vermilion-text font-medium">2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover rounded-xl p-6">
+                    <div class="flex items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Desenvolvimento Web com JavaScript</h3>
+                            <p class="text-gray-400">Alura</p>
+                            <p class="text-sm mt-2 vermilion-text font-medium">2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contatos e Links -->
+        <section id="contato" class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Contatos e Links Profissionais</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Informações de Contato</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">E-mail</p>
+                                <p class="font-medium text-lg">joaoazevedo.freire@outlook.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Telefone</p>
+                                <p class="font-medium text-lg">+55 (79) 99146-0078</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 vermilion-bg rounded-full flex items-center justify-center mr-6">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Endereço</p>
+                                <p class="font-medium">Avenida Augusto Franco, 2000, Quadra 03 Lote 15</p>
+                                <p class="font-medium">Aracaju - SE, 49075-100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Links Profissionais</h3>
+                    <div class="space-y-6">
+                        <a href="https://www.linkedin.com/in/joao-pedro-azevedo-freire-529797324" target="_blank"
+                            class="flex items-center p-5 rounded-xl border border-gray-700 hover:border-vermilion transition-colors card-hover">
+                            <div class="w-14 h-14 bg-blue-700 rounded-full flex items-center justify-center mr-6">
+                                <i class="fab fa-linkedin-in text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">LinkedIn</p>
+                                <p class="text-gray-400">/joao-pedro-azevedo-freire-529797324</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-external-link-alt text-gray-400"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/jaobrabo123" target="_blank"
+                            class="flex items-center p-5 rounded-xl border border-gray-700 hover:border-vermilion transition-colors card-hover">
+                            <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center mr-6">
+                                <i class="fab fa-github text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">GitHub</p>
+                                <p class="text-gray-400">github.com/jaobrabo123</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-external-link-alt text-gray-400"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/joaofreire29/" target="_blank"
+                            class="flex items-center p-5 rounded-xl border border-gray-700 hover:border-vermilion transition-colors card-hover">
+                            <div class="w-14 h-14 bg-pink-600 rounded-full flex items-center justify-center mr-6">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Instagram</p>
+                                <p class="text-gray-400">@joaofreire29</p>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-external-link-alt text-gray-400"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-2xl font-bold">João Pedro Azevedo Freire Mecenas</p>
+                    <p class="text-gray-400 text-lg">Desenvolvedor Full Stack</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">&copy; 2025. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

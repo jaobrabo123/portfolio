@@ -1,0 +1,353 @@
+:root {
+    --vermilion: #E34234;
+    --vermilion-light: #F05547;
+    --dark-bg: #000000;
+    --dark-text: #FFFFFF;
+    --light-bg: #FFFFFF;
+    --light-text: #000000;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+header.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+header.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+.vermilion-bg {
+    background-color: var(--vermilion);
+}
+
+.vermilion-text {
+    color: var(--vermilion);
+}
+
+.vermilion-border {
+    border-color: var(--vermilion);
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background-color: var(--vermilion);
+}
+
+.skill-level {
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-level-fill {
+    height: 100%;
+    background-color: var(--vermilion);
+    transition: width 0.5s ease;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+}
+
+.dark-mode .card-hover {
+    background-color: #111111;
+    border: 1px solid #333333;
+}
+
+.light-mode .card-hover {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para os níveis de habilidade */
+.skill-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.skill-tooltip {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.dark-mode .skill-tooltip {
+    background-color: #222222;
+    border: 1px solid #444;
+}
+
+.light-mode .skill-tooltip {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.skill-card:hover .skill-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.skill-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background: inherit;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: rotate(45deg);
+}
+
+.dark-mode .skill-tooltip::after {
+    border-color: #444;
+}
+
+.light-mode .skill-tooltip::after {
+    border-color: #ddd;
+}
+
+/* Estilos para o slider de projetos */
+.projects-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.projects-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.project-card {
+    flex: 0 0 calc(100% / 3);
+    padding: 0 15px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.project-card.side {
+    opacity: 0.7;
+    transform: scale(0.85);
+}
+
+.project-card.center {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-card-inner {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--vermilion);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.slider-nav:hover {
+    background-color: var(--vermilion-light);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider-nav.prev {
+    left: 10px;
+}
+
+.slider-nav.next {
+    right: 10px;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.dark-mode .tech-badge {
+    background-color: #222;
+    color: #ddd;
+}
+
+.light-mode .tech-badge {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para os sliders de habilidades */
+.skill-category-slider {
+    position: relative;
+}
+
+.skill-slider-track {
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-slider-track>.grid {
+    display: grid;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.skill-slider-nav {
+    transition: all 0.3s ease;
+}
+
+.skill-slider-nav:hover {
+    background-color: var(--vermilion) !important;
+    color: white;
+}
+
+.skill-indicator {
+    transition: all 0.3s ease;
+}
+
+.skill-indicator.active {
+    background-color: var(--vermilion) !important;
+    transform: scale(1.2);
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 100%;
+    }
+
+    .slider-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .slider-nav.prev {
+        left: 5px;
+    }
+
+    .slider-nav.next {
+        right: 5px;
+    }
+
+    .theme-toggle {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .skill-tooltip {
+        width: 180px;
+        top: -140px;
+    }
+}
+
+/* Melhorias de espaçamento */
+section {
+    margin-bottom: 80px;
+
+}
+
+.section-spacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skill-category-slider {
+    position: relative;
+    overflow: visible;
+    /* libera z-index */
+}
+
+.skill-slider-track {
+    overflow: hidden;
+    overflow: visible;
+    /*libera z-index  */
+}
+
+.skill-tooltip {
+    max-width: min(90vw, 320px);
+}
+
+#baixar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
